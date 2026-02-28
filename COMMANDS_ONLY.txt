@@ -1,0 +1,90 @@
+# 🎯 JARVIS - Copy & Paste Commands Only
+
+## **Complete Setup in 3 Commands**
+
+### Command 1: Install Ollama
+```bash
+brew install ollama && ollama pull llama3:latest
+```
+
+### Command 2: Start Ollama (in Terminal 1)
+```bash
+ollama serve
+```
+
+### Command 3: Start JARVIS (in Terminal 2)
+```bash
+bash /Users/user/Desktop/Jarvis\ 2/run_jarvis.sh
+```
+
+**Done!** JARVIS will now:
+- ✅ Test voice output (you'll hear: "JARVIS voice output is working")
+- ✅ Connect to Ollama
+- ✅ Wait for your commands
+- ✅ **Speak all responses back to you** 🔊
+
+---
+
+## **Your Command Prompt**
+
+```
+→ _
+```
+
+Type anything after the arrow. Examples:
+
+```
+→ hello
+→ what time is it
+→ tell me a joke
+→ open safari
+→ search weather
+→ exit
+```
+
+---
+
+## **Verify Everything Works**
+
+```bash
+# Test 1: Voice works
+say "Testing voice"
+
+# Test 2: Ollama is running
+curl http://localhost:11434/api/tags
+
+# Test 3: Can you hear Ollama?
+cd "/Users/user/Desktop/Jarvis 2" && source venv_fresh/bin/activate
+python -c "from core.brain import JarvisBrain; b = JarvisBrain(); print(b.process_command('hello')['message'])"
+```
+
+---
+
+## **Settings Location**
+
+Edit this file to customize JARVIS:
+```
+/Users/user/Desktop/Jarvis 2/.env
+```
+
+Key settings:
+```bash
+USER_NAME=Fs Ferdows                  # Your name
+SPEECH_OUTPUT_ENABLED=True             # ✅ Voice on
+VOICE_RATE=175                         # Speed
+PERSONALITY_MODE=witty                 # Witty responses
+```
+
+---
+
+## **All Done!** 🚀
+
+```bash
+# Terminal 1:
+ollama serve
+
+# Terminal 2:
+bash /Users/user/Desktop/Jarvis\ 2/run_jarvis.sh
+```
+
+**JARVIS is now your Mac personal assistant with voice!** 🤖🔊

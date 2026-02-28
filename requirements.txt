@@ -1,0 +1,60 @@
+# Core Dependencies
+python-dotenv==1.0.0
+requests==2.31.0
+pydantic==2.5.0
+
+# Voice Recognition & TTS
+SpeechRecognition==3.10.1
+pyttsx3==2.90
+pyaudio==0.2.14
+pydub==0.25.1
+
+# AI & NLP
+ollama==0.1.6
+langchain==0.1.0
+langchain-community==0.0.10
+google-generativeai==0.8.3
+
+# System Control
+pyautogui==0.9.54
+pyobjc==10.1
+pyobjc-framework-Cocoa==10.1
+pyobjc-framework-CoreServices==10.1
+applescript==2021.2.9
+
+# Web Automation
+selenium==4.16.0
+webdriver-manager==4.0.1
+beautifulsoup4==4.12.2
+playwright==1.40.0
+
+# Email & Communication
+secure-smtplib==0.1.1
+python-telegram-bot==20.7
+twilio==8.11.1
+
+# File & Data Management
+watchdog==3.0.0
+pillow==10.1.0
+python-magic==0.4.27
+
+# Web UI (Optional)
+flask==3.0.0
+flask-cors==4.0.0
+flask-socketio==5.3.5
+
+# Utilities
+colorama==0.4.6
+rich==13.7.0
+schedule==1.2.0
+python-dateutil==2.8.2
+pytz==2023.3
+
+# Music Control
+spotipy==2.23.0
+
+# Media Production
+moviepy==1.0.3
+proglog==0.1.10
+imageio==2.33.1
+imageio-ffmpeg==0.4.9
